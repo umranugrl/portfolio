@@ -77,12 +77,9 @@
             <div class="deger7"></div>
           </div>
 
-
         </div>
       </div>
-
     </div>
-
 </div>
 
 <style>

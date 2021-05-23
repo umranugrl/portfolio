@@ -11,7 +11,6 @@
             Steve Jobs
         </p>
     </div>
-   
 </div>
     
 <style>

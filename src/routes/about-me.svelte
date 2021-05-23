@@ -42,7 +42,8 @@
   }
   h1{
     width: 150px;
-    padding: 10px 10px 10px 60px;
+    padding: 10px 10px 10px 40px;
+    text-align: right;
     background-color: #9bd952;
     color: #fff;
     line-height: 1.1em;
