@@ -10,4 +10,8 @@
   <slot />
 </main>
 
-<style></style>
+<style>
+  main{
+    width: 75%;
+  }
+</style>
