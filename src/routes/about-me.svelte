@@ -30,8 +30,14 @@
     align-items: center;
   }
   .resim{
-    width: 80%; 
-    height: 90%;
+    width: 85%; 
+    height: 75%;
+  }
+  @media all and (max-width:650px){
+   .resim {
+    width: 60%; 
+    height: 30%;
+   } 
   }
   .content{
     font-size: 90%;
@@ -42,7 +48,12 @@
     background-color: rgb(234, 238, 236);
     margin-left: 20px;
     width: 94%;
-    height: 60vh;
+    height: 70vh;
+  }
+  @media all and (max-width:650px){
+  .content{
+     height: 60vh;
+   } 
   }
   h1{
     width: 65%;
@@ -51,6 +62,13 @@
     background-color: #9bd952;
     color: #fff;
     line-height: 1.1em;
+  }
+  @media all and (max-width:650px){
+    h1{
+    font-size: 10px;
+    text-align: right;
+    line-height: 0.5em;
+  }
   }
   .baslik{
     display:flex;
@@ -67,8 +85,13 @@
     width: 80%;
     height: 100%;
     padding-left: 20px;
-    font-size: 1.125 rem;
+    font-size: 16px;
     font-family:quicksand,sans-serif!important;  
+  }
+  @media all and (max-width:650px){
+   .sol {
+     font-size: 10px;
+   } 
   }
   .sag{
     display: flex;
@@ -77,5 +100,4 @@
     width: 80%;
     height: 100%;
   }
-  
 </style>

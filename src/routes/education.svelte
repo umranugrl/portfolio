@@ -104,6 +104,13 @@
     color: #fff;
     line-height: 1.1em;
   }
+  @media all and (max-width:650px){
+    h1{
+    font-size: 10px;
+    text-align: right;
+    line-height: 0.5em;
+  }
+  }
   .content{
     display:flex;
     justify-content:center;
@@ -114,12 +121,24 @@
     width: 94%;
     height: 90vh;
   }
+  @media all and (max-width:650px){
+    .content{
+      height: 60vh;
+      width: 85%;
+  }
+  }
   .sol{
     display: flex;
     justify-content:center;
     align-items: center;
     width: 80%;
+    margin-left: 10px;
     font-family:quicksand,sans-serif!important;   
+  }
+  @media all and (max-width:650px){
+  .sol{
+    margin-left: 5px;
+   } 
   }
   h4{
     width: 90%;
@@ -128,6 +147,13 @@
     background-color: #9bd952;
     color: #fff;
     line-height: 1;
+  }
+  @media all and (max-width:650px){
+    h4{
+    font-size: 10px;
+    width: 70%;
+    padding: 5px;
+  }
   }
   .egitim{
     display: inline;
@@ -138,6 +164,11 @@
     display:flex;
     font-size: 17px;
     line-height: 0.9em;
+  }
+  @media all and (max-width:650px){
+  p{
+    font-size: 9px;
+   } 
   }
   .sag{
     display: flex;
@@ -150,24 +181,43 @@
     font-weight: bold;
   }
   h5{
-    font-size: 15px;
+    font-size: 16px;
+  }
+  @media all and (max-width:650px){
+    h2{
+      font-size: 10px;
+    }
+    h5{
+    font-size: 9px;
+    }
   }
   .a{
     background-color: transparent;
     border: 2px solid #9bd952 ;
     box-sizing: border-box;
     height: 19px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     width: 100%;
-    border-radius: 7px;
+    border-radius: 9px;
     padding: 0;
   } 
+  @media all and (max-width:650px){
+    .a{
+      height: 10px;
+      width: 80%;
+  }
+  }
   .deger{
     width: 65%;
     border: 1px solid #fff;
     background-color: #9bd952;
     border-radius: 7px;
     height: 13px;
+  }
+  @media all and (max-width:650px){
+    .deger{
+      height: 5px;
+  }
   }
   .deger1{
     width: 50%;
@@ -176,12 +226,22 @@
     border-radius: 7px;
     height: 13px;
   }
+  @media all and (max-width:650px){
+    .deger1{
+      height: 5px;
+  }
+  }
   .deger2{
     width: 80%;
     border: 1px solid #fff;
     background-color: #9bd952;
     border-radius: 7px;
     height: 13px;
+  }
+  @media all and (max-width:650px){
+    .deger2{
+      height: 5px;
+  }
   }
   .deger3{
     width: 70%;
@@ -190,12 +250,22 @@
     border-radius: 7px;
     height: 13px;
   }
+  @media all and (max-width:650px){
+    .deger3{
+      height: 5px;
+  }
+  }
   .deger4{
     width: 10%;
     border: 1px solid #fff;
     background-color: #9bd952;
     border-radius: 7px;
     height: 13px;
+  }
+  @media all and (max-width:650px){
+    .deger4{
+      height: 5px;
+  }
   }
   .deger5{
     width: 20%;
@@ -204,12 +274,22 @@
     border-radius: 7px;
     height: 13px;
   }
+  @media all and (max-width:650px){
+    .deger5{
+      height: 5px;
+  }
+  }
   .deger6{
     width: 60%;
     border: 1px solid #fff;
     background-color: #9bd952;
     border-radius: 7px;
     height: 13px;
+  }
+  @media all and (max-width:650px){
+    .deger6{
+      height: 5px;
+  }
   }
   .deger7{
     width: 60%;
@@ -218,5 +298,9 @@
     border-radius: 7px;
     height: 13px;
   }
-
+  @media all and (max-width:650px){
+    .deger7{
+      height: 5px;
+  }
+  }
 </style>

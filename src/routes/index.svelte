@@ -35,4 +35,9 @@
         justify-content: center;
         width: 40%;
     }
+    @media all and (max-width:650px){
+   p {
+     font-size: 12px;
+   } 
+  }
 </style>
