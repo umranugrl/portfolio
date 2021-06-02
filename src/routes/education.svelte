@@ -11,7 +11,6 @@
     <div class="sol">
       <div class="egitim">
        
-        <h3>OKUL</h3>
         <h4>2019/Devam</h4>
         <p><b>Karadeniz Teknik Üniversitesi</b></p>
         <p style="color: gray;">Of Teknoloji Fakültesi</p>
@@ -93,13 +92,13 @@
     display:flex;
     justify-content:left;
     position:absolute;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
     align-items: center;
   }
   h1{
-    width: 150px;
-    padding: 10px 10px 10px 40px;
+    width: 65%;
+    padding: 10px 10px 10px 60px;
     text-align: right;
     background-color: #9bd952;
     color: #fff;
@@ -111,28 +110,19 @@
     align-items: center;
     position:static;
     background-color: rgb(234, 238, 236);
-    margin-left: 35px;
-    width: 90%;
-    height: 700px
+    margin-left: 20px;
+    width: 94%;
+    height: 90vh;
   }
   .sol{
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 550px;
+    width: 80%;
     font-family:quicksand,sans-serif!important;   
   }
-  h3{
-    vertical-align: inherit;
-    width: 60px;
-    padding: 10px;
-    border: 2px solid #9bd952;
-    display: flex;
-    font-weight: bold;
-    font-size: 20px;   
-  }
   h4{
-    width: 90px;
+    width: 90%;
     padding: 10px;
     text-align: center;
     background-color: #9bd952;
@@ -147,13 +137,13 @@
   p{
     display:flex;
     font-size: 17px;
-    line-height: 1;
+    line-height: 0.9em;
   }
   .sag{
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 500px;
+    width: 80%;
     font-family:quicksand,sans-serif!important;
   }
   h2{
@@ -169,63 +159,63 @@
     height: 19px;
     margin-bottom: 12px;
     width: 100%;
-    border-radius: 9px;
+    border-radius: 7px;
     padding: 0;
   } 
   .deger{
     width: 65%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger1{
     width: 50%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger2{
     width: 80%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger3{
     width: 70%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger4{
     width: 10%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger5{
     width: 20%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger6{
     width: 60%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
   .deger7{
     width: 60%;
     border: 1px solid #fff;
     background-color: #9bd952;
-    border-radius: 9px;
+    border-radius: 7px;
     height: 13px;
   }
 

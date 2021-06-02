@@ -4,15 +4,15 @@
 
   <div class="header">
     <div class="profil">
-      <img class="resim" src="resim.jpg" width="200px" height="200px"/>
+      <img class="resim" src="resim.jpg" alt=""/>
       <p class="isim">Ümran UĞURLU</p>
       <p class="meslek">Yazılım Mühendisi</p>
     </div>
     <div class="linkler">
-      <a href="/" target="_blank">Anasayfa</a>
-      <a href="/about-me" target="_blank">Hakkımda</a>
-      <a href="/education" target="_blank">Eğitim</a>
-      <a href="/experience" target="_blank">Deneyim</a>
+      <a href="/" >Anasayfa</a>
+      <a href="/about-me">Hakkımda</a>
+      <a href="/education">Eğitim</a>
+      <a href="/experience">Deneyim</a>
     </div>
     <div class="icon">
       <a href="https://tr-tr.facebook.com/umran.ogurlu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
@@ -24,7 +24,7 @@
 
 
 <style>
-  div.header {
+  .header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +49,8 @@
     width: 100%;
   }
   .resim {
+    width:65%;
+    height:65%;
     margin: 0 auto;
     border-radius: 150px;
     -webkit-border-radius: 150px;
@@ -59,7 +61,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 26px;
+    font-size: 1.5em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:bold;
     line-height: 1;
@@ -70,11 +72,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-size: 20px;
+    font-size: 1.25em;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: gray;
     line-height: 1;
-    margin-bottom:-50px;
+    margin-bottom:-30px;
   }
   .linkler a {
     width: 100%;
@@ -84,7 +86,7 @@
     text-align: center;
     border: 2px dotted;
     border-color: rgb(207, 230, 207);
-    font-size: 24px;
+    font-size: 1.5rem;
     color: rgb(99, 102, 99);
     text-decoration: none;
   }

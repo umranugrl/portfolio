@@ -19,7 +19,8 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        background-image: url('/deneme.jpg');
+        background-image: url('/iki.jpg');
+        background-repeat: no-repeat;
         box-sizing: border-box;
         width: 100%;
         height: 100vh;

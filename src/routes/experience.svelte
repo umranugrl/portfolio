@@ -53,8 +53,8 @@
     display:flex;
     justify-content:left;
     position:absolute;
-    margin-top: 10px;
-    margin-left: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
     align-items: center;
   }
   .content{
@@ -63,12 +63,12 @@
     align-items: center;
     position:static;
     background-color: rgb(234, 238, 236);
-    margin-left: 35px;
-    width: 90%;
-    height: 700px;
+    margin-left: 20px;
+    width: 94%;
+    height: 90vh;
   }
   h1{
-    width: 150px;
+    width: 65%;
     padding: 10px 10px 10px 60px;
     text-align: right;
     background-color: #9bd952;
@@ -76,7 +76,7 @@
     line-height: 1.1em;
   }
   h4{
-    width: 150px;
+    width: 90%;
     padding: 10px;
     text-align: center;
     background-color: #9bd952;
@@ -87,18 +87,20 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 550px;
+    line-height: 1.5em;
+    width: 80%;
+    padding-left: 20px;
     font-family:quicksand,sans-serif!important; 
-    font-size: 15px;
+    font-size: 0.85rem;
   }
   .sag{
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 500px;
-    font-size: 15px;
+    line-height: 1.5em;
+    width: 80%;
+    font-size: 0.85rem;
     margin-left: 10px;
     font-family:quicksand,sans-serif!important; 
   }
- 
 </style>
