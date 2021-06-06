@@ -2,6 +2,7 @@
 <svelte:head>
   <title>Home</title>
 </svelte:head>
+
 <div class="govde">
     <div class="content">
         <p class="a">

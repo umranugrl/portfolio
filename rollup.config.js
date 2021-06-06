@@ -8,6 +8,7 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import sveltePreprocess from 'svelte-preprocess';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -18,7 +19,8 @@ const onwarn = (warning, onwarn) =>
 	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
 	onwarn(warning);
 
-export default {
+
+	export default {
 	client: {
 		input: config.client.input(),
 		output: config.client.output(),
@@ -34,7 +36,11 @@ export default {
 				compilerOptions: {
 					dev,
 					hydratable: true
-				}
+				},
+				preprocess :sveltePreprocess ({
+					sourceMap: !dev,
+					postcss:true
+			    }),
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
