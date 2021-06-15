@@ -37,12 +37,12 @@
       </div>
     </div>
 
-    <div class="sag  flex items-center justify-center w-3/4 font-serif ">
+    <div class="sag flex items-center justify-center w-3/4 font-serif py-10">
       <div class="design">
         <h2 class="bas font-bold">Tasarım Becerileri</h2>
         <h5 class="yazi text-base">Web Tasarım</h5>
         <div class="a h-4/5 w-full rounded-lg mb-3 border-solid border-2">
-          <div class="deger w-3/5 border-solid border-2 rounded-lg h-5/6" />
+          <div class="deger w-3/5 border-solid border-2 rounded-lg h-5/6 p-1" />
         </div>
 
         <h5 class="yazi text-base">Grafik Tasarım</h5>

@@ -1,6 +1,22 @@
+<script>
+  let open = false;
+  const headerClass = `header flex justify-center items-center flex-wrap box-border h-screen bg-gray-200 fixed md:static`;
+  const menuBarClasses = [`close hamburger-menu`, `open hamburger-menu`];
+
+  function HeaderKontrol() {
+    return open = !open
+  }
+</script>
+
 <div
-  class="header flex justify-center items-center flex-wrap box-border w-1/5 h-screen bg-gray-200"
+  class={open ? `open ${headerClass}` : `close ${headerClass}`}
+  on:click={HeaderKontrol}
 >
+  <div class="menu-bar w-full flex items-center justify-end md:hidden">
+    <div class={open ? menuBarClasses[0] : menuBarClasses[1]}>
+      <i></i><i></i><i></i>
+    </div>
+  </div>
   <div class="profil flex justify-center items-center flex-wrap">
     <img class="resim rounded-full w-3/4 h-3/4" src="resim.jpg" alt="" />
     <p
@@ -73,7 +89,127 @@
 </div>
 
 <style>
+  .header {
+    width: 80%;
+    top: 0;
+    transition: left 4s ease;
+  }
+  .header.close {
+    left: -70%;
+  }
+  .header.open { 
+    left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .header {
+      width: 20%;
+      left: 0;
+    }
+  }
+  .menu-bar {
+    padding: 0 2px;
+  }
   .linkler a {
     border-color: #9bd952;
+  }
+  .hamburger-menu {
+    cursor: pointer;
+    width: 30px; 
+    height: 25px;
+  }
+  .hamburger-menu i {
+    background-color: #000;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+  }
+  .hamburger-menu i:nth-child(1) {
+    -webkit-animation:outT 0.8s backwards;
+    animation:outT 0.8s backwards;
+    -webkit-animation-direction:reverse;
+    animation-direction:reverse;
+  }
+  .hamburger-menu i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation:outM 0.8s backwards;
+    animation:outM 0.8s backwards;
+    -webkit-animation-direction:reverse;
+    animation-direction:reverse;
+  }
+  .hamburger-menu i:nth-child(3) {
+    -webkit-animation:outBtm 0.8s backwards;
+    animation:outBtm 0.8s backwards;
+    -webkit-animation-direction:reverse;
+    animation-direction:reverse;
+  }
+  .hamburger-menu.close i:nth-child(1) {
+      -webkit-animation:inT 0.8s forwards;
+      animation:inT 0.8s forwards;
+  }
+  .hamburger-menu.close i:nth-child(2) {
+      -webkit-animation:inM 0.8s forwards;
+      animation:inM 0.8s forwards;
+  }
+  .hamburger-menu.close i:nth-child(3) {
+      -webkit-animation:inBtm 0.8s forwards;
+      animation:inBtm 0.8s forwards;
+  }
+  @-webkit-keyframes inM{
+    50%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(45deg);}
+  }
+  @keyframes inM{
+    50%{transform:rotate(0deg);}
+    100%{transform:rotate(45deg);}
+  }
+  @-webkit-keyframes outM{
+    50%{-webkit-transform:rotate(0deg);}
+    100%{-webkit-transform:rotate(45deg);}
+  }
+  @keyframes outM{
+    50%{transform:rotate(0deg);}
+    100%{transform:rotate(45deg);}
+  }
+  @-webkit-keyframes inT{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(9px) rotate(135deg);}
+  }
+  @keyframes inT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+  }
+  @-webkit-keyframes outT{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(9px) rotate(135deg);}
+  }
+  @keyframes outT{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(9px) rotate(0deg);}
+    100%{transform: translateY(9px) rotate(135deg);}
+  }
+  @-webkit-keyframes inBtm{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(-9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(-9px) rotate(135deg);}
+  }
+  @keyframes inBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
+  }
+  @-webkit-keyframes outBtm{
+    0%{-webkit-transform: translateY(0px) rotate(0deg);}
+    50%{-webkit-transform: translateY(-9px) rotate(0deg);}
+    100%{-webkit-transform: translateY(-9px) rotate(135deg);}
+  }
+  @keyframes outBtm{
+    0%{transform: translateY(0px) rotate(0deg);}
+    50%{transform: translateY(-9px) rotate(0deg);}
+    100%{transform: translateY(-9px) rotate(135deg);}
   }
 </style>

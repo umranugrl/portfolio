@@ -5,7 +5,7 @@
 
 <Header {segment} />
 
-<main>
+<main class="w-full md:w-4/5">
   <slot />
 </main>
 
@@ -20,8 +20,5 @@
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-  }
-  main {
-    width: 80%;
   }
 </style>
