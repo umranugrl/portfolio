@@ -14,7 +14,14 @@
   @tailwind components;
   @tailwind utilities;
 
+  #sapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
   main {
-    width: 75%;
+    width: 80%;
   }
 </style>

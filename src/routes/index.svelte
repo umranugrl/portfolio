@@ -1,44 +1,24 @@
 <script></script>
+
 <svelte:head>
   <title>Home</title>
 </svelte:head>
 
-<div class="govde">
-    <div class="content">
-        <p class="a">
-            "Bu ülkedeki herkesin bilgisayar programlamayı öğrenmesi gerekir. Çünkü bu size nasıl düşüneceğinizi öğretir.”
-        </p>
-        <p class="a">
-            Steve Jobs
-        </p>
-    </div>
+<div
+  class="govde flex justify-center items-center flex-wrap box-border w-full h-screen"
+>
+  <div class="content text-center font-serif text-xl text-gray-100 w-2/4">
+    <p class="a">
+      "Bu ülkedeki herkesin bilgisayar programlamayı öğrenmesi gerekir. Çünkü bu
+      size nasıl düşüneceğinizi öğretir.”
+    </p>
+    <p class="a">Steve Jobs</p>
+  </div>
 </div>
-    
+
 <style>
-    .govde{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        background-image: url('/iki.jpg');
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100vh;
-    }
-    p{
-        margin:0;
-        color: white;
-        font-family: quicksand,sans-serif!important;
-        font-size: 18px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        width: 40%;
-    }
-    @media all and (max-width:650px){
-   p {
-     font-size: 12px;
-   } 
+  .govde {
+    background-image: url("/iki.jpg");
+    background-repeat: no-repeat;
   }
 </style>
